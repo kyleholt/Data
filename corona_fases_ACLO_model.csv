@@ -1,0 +1,7 @@
+startdatum,einddatum,corona_fase,toelichting
+2020-03-13,2020-06-29,Gesloten_1,Geen check-ins in de ACLO-data; eerste lockdown/sluiting fitnessfaciliteiten.
+2020-06-30,2020-12-14,Beperkt_open_1,"Fitness weer gebruikt, maar duidelijk lager dan voor corona; daarom als beperkt open gemarkeerd."
+2020-12-15,2021-04-04,Gesloten_2,Geen check-ins in de ACLO-data; tweede sluitingsperiode rond harde lockdown.
+2021-04-05,2021-05-18,Zeer_beperkt,Slechts enkele check-ins per dag; waarschijnlijk zeer beperkte toegang/testgebruik.
+2021-05-19,2021-06-25,Beperkt_open_2,"Check-ins nemen weer toe, maar niveau blijft lager dan normaal."
+2021-06-26,2021-12-01,Nagenoeg_normaal,"Gebruik loopt weer op, maar blijft lager dan het pre-coronaniveau."

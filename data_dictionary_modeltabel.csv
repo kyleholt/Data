@@ -1,0 +1,22 @@
+Variabele,Type,Betekenis,Rol in analyse/model
+datum,datetime,Datum waarop de bezoeken zijn geaggregeerd.,Onafhankelijke variabele / tijdsas
+aantal_bezoeken,integer,Aantal fitness-check-ins op die datum. Mogelijke dubbele check-ins binnen 60 seconden zijn niet meegeteld.,Afhankelijke variabele / target
+unieke_bezoekers,integer,Aantal unieke klantnummers dat op die datum heeft ingecheckt.,Controlevariabele / beschrijvend
+jaar,integer,Kalenderjaar van de datum.,Onafhankelijke variabele
+maand,integer,"Kalendermaand van de datum, 1 t/m 12.",Onafhankelijke variabele
+week,integer,ISO-weeknummer van de datum.,Onafhankelijke variabele
+weekdag_nummer,integer,"ISO-weekdag: maandag = 1, zondag = 7.",Onafhankelijke variabele
+weekdag,categorisch,Naam van de weekdag.,Beschrijvend / visualisatie
+weekend,binair,"1 als de datum in het weekend valt, anders 0.",Onafhankelijke variabele
+seizoen,categorisch,"Winter, lente, zomer of herfst op basis van de maand.",Beschrijvend / visualisatie
+seizoen_nummer,integer,Numerieke omzetting van seizoen voor modellering.,Onafhankelijke variabele
+feestdag,binair,"1 als de datum volgens de academic calendar een feestdag is, anders 0.",Onafhankelijke variabele
+vakantie,binair,"1 als de datum volgens de academic calendar binnen een vakantieperiode valt, anders 0.",Onafhankelijke variabele
+tentamenperiode,binair,"1 als de datum volgens de academic calendar binnen een tentamenperiode valt, anders 0.",Onafhankelijke variabele
+corona_fase,categorisch,"Indeling van de datum naar corona-impact: geen corona, gesloten, beperkt open of zeer beperkt.",Extra verklarende variabele
+corona_gesloten,binair,"1 tijdens de twee duidelijke sluitingsperioden met nul check-ins, anders 0.",Onafhankelijke variabele
+corona_beperkt,binair,"1 tijdens perioden met beperkte opening of zeer beperkt gebruik, anders 0.",Onafhankelijke variabele
+corona_fase_nummer,integer,Numerieke codering van corona_fase voor eenvoudige modellen.,Onafhankelijke variabele
+max_temperatuur,float,"Maximumtemperatuur per dag in graden Celsius, KNMI-station Eelde.",Onafhankelijke variabele
+som_neerslag,float,"Etmaalsom neerslag in millimeters, KNMI-station Eelde. Waarde -0,1 is vervangen door 0,025 voor minder dan 0,05 mm.",Onafhankelijke variabele
+gem_windkracht,integer,"Gemiddelde windkracht volgens Beaufortschaal, afgeleid van gemiddelde windsnelheid.",Onafhankelijke variabele
